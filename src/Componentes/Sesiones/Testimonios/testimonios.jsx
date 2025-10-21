@@ -75,7 +75,7 @@ const Testimonios = () => {
             </p>
           </div>
   
-          {/* Testimonials Grid */}
+         
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonios.map((testimonio) => (
               <Card 
@@ -87,7 +87,7 @@ const Testimonios = () => {
                     : ''
                 }`}
               >
-                {/* Featured Badge */}
+                
                 {testimonio.featured && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                     <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
@@ -96,21 +96,21 @@ const Testimonios = () => {
                   </div>
                 )}
   
-                {/* Testimonial Content */}
+               
                 <div className="flex flex-col h-full">
-                  {/* Rating */}
+                 
                   <div className="mb-4">
                     <StarRating rating={testimonio.rating} />
                   </div>
   
-                  {/* Testimonial Text */}
+                  
                   <blockquote className="flex-grow">
                     <p className="text-gray-700 text-lg leading-relaxed italic">
                       "{testimonio.content}"
                     </p>
                   </blockquote>
   
-                  {/* Author Info */}
+                 
                   <div className="flex items-center mt-6 pt-6 border-t border-gray-200">
                     <div className="text-3xl mr-4">
                       {testimonio.image}
@@ -132,7 +132,7 @@ const Testimonios = () => {
             ))}
           </div>
   
-          {/* Stats Section */}
+         
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">500+</div>
